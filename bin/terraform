@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+exec docker run \
+  --name terraform-cli \
+  --interactive \
+  --tty \
+  --rm \
+  --workdir /tmp/workspace/terraform \
+  --volume "${HOME}/.aws":/root/.aws \
+  --volume "$(pwd)/infrastructure":/tmp/workspace/terraform \
+  hashicorp/terraform:0.11.11 "${@}"

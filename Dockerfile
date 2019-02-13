@@ -19,6 +19,6 @@ FROM dependencies as release
 COPY --from=dependencies $HOME/app/prod_node_modules ./node_modules
 COPY . .
 
-EXPOSE 4000
+EXPOSE 3000
 
 CMD ["node", "."]

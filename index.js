@@ -1,9 +1,11 @@
+'use strict'
+
 const express = require('express')
 const os = require('os')
 
 const hostname = os.hostname()
 const app = express()
 
-app.listen(4000, () => console.log(`Example app listening on port 4000! Host: ${hostname}`))
+app.listen(3000, () => console.log(`Example app listening on port 3000! Host: ${hostname}`))
 
 app.get('/', async (req, res) => res.json({ hostname }))

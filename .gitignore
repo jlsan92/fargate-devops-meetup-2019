@@ -8,6 +8,9 @@
 # .tfvars files
 *.tfvars
 
+# Terrafom plans
+*.tfplan
+
 # Terraform outputs
 *.outputs.json
 

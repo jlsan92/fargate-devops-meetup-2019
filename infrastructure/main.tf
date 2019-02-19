@@ -19,8 +19,8 @@ variable "naked-domain" {
 # RESOURCES
 
 module "fargate" {
-  source  = "strvcom/strv-fargate/aws"
-  version = "0.7.1"
+  source  = "strvcom/fargate/aws"
+  version = "0.7.3"
 
   name = "devops-meetup"
 
